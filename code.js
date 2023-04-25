@@ -2,3 +2,11 @@
 // and select "Open with Live Server"
 
 // Your Code Here.
+let boxTop = 200;
+let boxLeft = 200;
+
+let onKeyPress = function(event) {
+    console.log("You Pressed: " + event.key);
+}
+
+document.addEventListener("keydown", onKeyPress);
