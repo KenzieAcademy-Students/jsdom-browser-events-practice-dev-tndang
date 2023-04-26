@@ -5,6 +5,20 @@
 let boxTop = 200;
 let boxLeft = 200;
 
+let resetButton = document.getElementById("resetButton");
+
+let resetCube = function() {
+    boxTop = 200;
+    boxLeft = 200;
+
+    document.getElementById("box").style.top = boxTop + "px";
+    document.getElementById("box").style.left = boxLeft + "px";
+
+    console.log("The cube has been reset!")
+} 
+
+resetButton.addEventListener("click", resetCube);
+
 let onKeyPress = function(event) {
     if (event.key === "ArrowDown") {
         boxTop += 10;
